@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">AI Coin - Official Utility Token for SUB Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .animate-slide-in {
+      animation: slideIn 0.5s ease-out;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-lg sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://raw.githubusercontent.com/ckdnjstjq18/assets/7837ab1ab433b424d73325274248f533e6dbf3ff/aicoin.png" alt="AI Coin Logo" class="w-12 h-12 mr-2">
+        <h1 class="text-2xl sm:text-3xl font-bold text-neon-green">AI Coin</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button onclick="setLanguage('ko')" class="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition text-2xl" title="한국어">🇰🇷</button>
+        <button onclick="setLanguage('en')" class="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition text-2xl" title="English">🇺🇸</button>
+        <nav class="hidden sm:flex space-x-4">
+          <a href="#about" class="hover:text-neon-green transition" data-i18n="nav-about">About</a>
+          <a href="#token" class="hover:text-neon-green transition" data-i18n="nav-token">Token</a>
+          <a href="#roadmap" class="hover:text-neon-green transition" data-i18n="nav-roadmap">Roadmap</a>
+          <a href="#channels" class="hover:text-neon-green transition" data-i18n="nav-channels">Channels</a>
+        </nav>
+        <button class="sm:hidden text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden sm:hidden bg-gray-800">
+      <a href="#about" class="block px-4 py-2 hover:bg-gray-700" data-i18n="nav-about">About</a>
+      <a href="#token" class="block px-4 py-2 hover:bg-gray-700" data-i18n="nav-token">Token</a>
+      <a href="#roadmap" class="block px-4 py-2 hover:bg-gray-700" data-i18n="nav-roadmap">Roadmap</a>
+      <a href="#channels" class="block px-4 py-2 hover:bg-gray-700" data-i18n="nav-channels">Channels</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-gray-900 to-blue-900 py-20 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">AI Coin</h2>
+      <p class="text-lg sm:text-xl text-gray-300 mb-6" data-i18n="hero-subtitle">Official Utility Token for SUB Platform</p>
+      <p class="text-md sm:text-lg text-gray-400 max-w-2xl mx-auto" data-i18n="hero-description">Powering automated GPT tools, content creator rewards, and decentralized user incentives.</p>
+      <a href="#token" class="mt-8 inline-block px-6 py-3 bg-neon-green text-gray-900 rounded-lg hover:bg-green-400 transition text-lg font-semibold" data-i18n="hero-cta">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About SUB Section -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in">
+      <h3 class="text-3xl font-bold mb-6 text-center" data-i18n="about-title">About SUB</h3>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto text-center" data-i18n="about-description">
+        SUB is a customizable AI remote control tool that integrates multiple chatbots (GPT, Gemini, Grok) into one interface, enabling easy automation, prompt saving, and user engagement features.
+      </p>
+      <div class="mt-6 text-center">
+        <a href="https://subai.netlify.app/" target="_blank" class="inline-block px-6 py-3 bg-neon-green text-gray-900 rounded-lg hover:bg-green-400 transition text-lg font-semibold" data-i18n="about-button">Visit SUB</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Token Information Section -->
+  <section id="token" class="py-16 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in">
+      <h3 class="text-3xl font-bold mb-8 text-center" data-i18n="token-title">Token Information</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h4 class="text-xl font-semibold mb-4" data-i18n="token-details-title">Details</h4>
+          <p data-i18n="token-name"><strong>Name:</strong> AI Coin</p>
+          <p data-i18n="token-symbol"><strong>Symbol:</strong> AI</p>
+          <p data-i18n="token-supply"><strong>Total Supply:</strong> 1,000,000,000,000,000</p>
+          <p data-i18n="token-network"><strong>Network:</strong> Polygon Mainnet</p>
+          <p data-i18n="token-contract"><strong>Contract:</strong> 0xDa77A5aaC5efCB25c8cf71793d71D117E60748D8</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h4 class="text-xl font-semibold mb-4" data-i18n="token-allocation-title">Token Allocation</h4>
+          <p data-i18n="token-allocation-airdrop"><strong>40%:</strong> Airdrop to users</p>
+          <p data-i18n="token-allocation-ecosystem"><strong>30%:</strong> Ecosystem & Rewards</p>
+          <p data-i18n="token-allocation-liquidity"><strong>20%:</strong> Liquidity Pool</p>
+          <p data-i18n="token-allocation-team"><strong>10%:</strong> Team & Dev (12-month lock)</p>
+        </div>
+      </div>
+      <div class="mt-8 bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-semibold mb-4 text-center" data-i18n="token-usecases-title">Use Cases</h4>
+        <ul class="list-disc list-inside text-gray-300 text-center">
+          <li data-i18n="token-usecase-premium">Unlock premium SUB features</li>
+          <li data-i18n="token-usecase-earn">Earn tokens through platform activity</li>
+          <li data-i18n="token-usecase-referral">Referral-based airdrop rewards</li>
+          <li data-i18n="token-usecase-marketplace">Future marketplace payment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-16 bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in">
+      <h3 class="text-3xl font-bold mb-8 text-center" data-i18n="roadmap-title">Roadmap</h3>
+      <div class="relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-neon-green"></div>
+        <div class="space-y-8">
+          <div class="flex items-center">
+            <div class="w-1/2 pr-4 text-right">
+              <p class="text-lg font-semibold">2025.04</p>
+              <p data-i18n="roadmap-2025-04">Token launched on Polygon</p>
+            </div>
+            <div class="w-1/2 pl-4"></div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-1/2 pr-4"></div>
+            <div class="w-1/2 pl-4 text-left">
+              <p class="text-lg font-semibold">2025.05</p>
+              <p data-i18n="roadmap-2025-05">Token info registration</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-1/2 pr-4 text-right">
+              <p class="text-lg font-semibold">2025.06</p>
+              <p data-i18n="roadmap-2025-06">Airdrop Event begins</p>
+            </div>
+            <div class="w-1/2 pl-4"></div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-1/2 pr-4"></div>
+            <div class="w-1/2 pl-4 text-left">
+              <p class="text-lg font-semibold">2025.07</p>
+              <p data-i18n="roadmap-2025-07">Wallet integration & Premium unlock</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-1/2 pr-4 text-right">
+              <p class="text-lg font-semibold">2025.08</p>
+              <p data-i18n="roadmap-2025-08">DEX liquidity added</p>
+            </div>
+            <div class="w-1/2 pl-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Channels Section -->
+  <section id="channels" class="py-16 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in">
+      <h3 class="text-3xl font-bold mb-8 text-center" data-i18n="channels-title">Official Channels</h3>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+        <a href="https://twitter.com/AICoinTeam" target="_blank" class="text-neon-green hover:underline" data-i18n="channels-twitter">Twitter: @AICoinTeam</a>
+        <a href="https://github.com/ckdnjstjq18" target="_blank" class="text-neon-green hover:underline" data-i18n="channels-github">GitHub: ckdnjstjq18</a>
+        <a href="https://discord.gg/PyHpA5AV" target="_blank" class="text-neon-green hover:underline" data-i18n="channels-discord">Discord: AI Coin Community</a>
+      </div>
+      <div class="mt-6 text-center">
+        <a href="https://ckdnjstjq18.github.io/aicoin-site/whitepaper.pdf" target="_blank" class="inline-block px-6 py-3 bg-neon-green text-gray-900 rounded-lg hover:bg-green-400 transition text-lg font-semibold" data-i18n="channels-whitepaper">View Whitepaper</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-400" data-i18n="footer-website">Website: <a href="https://ckdnjstjq18.github.io/aicoin-site/" class="text-neon-green hover:underline">ckdnjstjq18.github.io/aicoin-site</a> (Future: aicoin.site)</p>
+      <p class="text-gray-400 mt-2" data-i18n="footer-contract">Contract: 0xDa77A5aaC5efCB25c8cf71793d71D117E60748D8</p>
+      <p class="text-gray-400 mt-2" data-i18n="footer-email">Email: ckdnjstjq18@naver.com</p>
+      <p class="text-gray-400 mt-2" data-i18n="footer-copyright">© 2025 AI Coin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neon-green': '#39FF14',
+          },
+        },
+      },
+    };
+
+    const translations = {
+      en: {
+        title: "AI Coin - Official Utility Token for SUB Platform",
+        "nav-about": "About",
+        "nav-token": "Token",
+        "nav-roadmap": "Roadmap",
+        "nav-channels": "Channels",
+        "hero-subtitle": "Official Utility Token for SUB Platform",
+        "hero-description": "Powering automated GPT tools, content creator rewards, and decentralized user incentives.",
+        "hero-cta": "Learn More",
+        "about-title": "About SUB",
+        "about-description": "SUB is a customizable AI remote control tool that integrates multiple chatbots (GPT, Gemini, Grok) into one interface, enabling easy automation, prompt saving, and user engagement features.",
+        "about-button": "Visit SUB",
+        "token-title": "Token Information",
+        "token-details-title": "Details",
+        "token-name": "<strong>Name:</strong> AI Coin",
+        "token-symbol": "<strong>Symbol:</strong> AI",
+        "token-supply": "<strong>Total Supply:</strong> 1,000,000,000,000,000",
+        "token-network": "<strong>Network:</strong> Polygon Mainnet",
+        "token-contract": "<strong>Contract:</strong> 0xDa77A5aaC5efCB25c8cf71793d71D117E60748D8",
+        "token-allocation-title": "Token Allocation",
+        "token-allocation-airdrop": "<strong>40%:</strong> Airdrop to users",
+        "token-allocation-ecosystem": "<strong>30%:</strong> Ecosystem & Rewards",
+        "token-allocation-liquidity": "<strong>20%:</strong> Liquidity Pool",
+        "token-allocation-team": "<strong>10%:</strong> Team & Dev (12-month lock)",
+        "token-usecases-title": "Use Cases",
+        "token-usecase-premium": "Unlock premium SUB features",
+        "token-usecase-earn": "Earn tokens through platform activity",
+        "token-usecase-referral": "Referral-based airdrop rewards",
+        "token-usecase-marketplace": "Future marketplace payment",
+        "roadmap-title": "Roadmap",
+        "roadmap-2025-04": "Token launched on Polygon",
+        "roadmap-2025-05": "Token info registration",
+        "roadmap-2025-06": "Airdrop Event begins",
+        "roadmap-2025-07": "Wallet integration & Premium unlock",
+        "roadmap-2025-08": "DEX liquidity added",
+        "channels-title": "Official Channels",
+        "channels-twitter": "Twitter: @AICoinTeam",
+        "channels-github": "GitHub: ckdnjstjq18",
+        "channels-discord": "Discord: AI Coin Community",
+        "channels-whitepaper": "View Whitepaper",
+        "footer-website": "Website: <a href='https://ckdnjstjq18.github.io/aicoin-site/' class='text-neon-green hover:underline'>ckdnjstjq18.github.io/aicoin-site</a> (Future: aicoin.site)",
+        "footer-contract": "Contract: 0xDa77A5aaC5efCB25c8cf71793d71D117E60748D8",
+        "footer-email": "Email: ckdnjstjq18@naver.com",
+        "footer-copyright": "© 2025 AI Coin. All rights reserved.",
+      },
+      ko: {
+        title: "AI Coin - SUB 플랫폼 공식 유틸리티 토큰",
+        "nav-about": "소개",
+        "nav-token": "토큰",
+        "nav-roadmap": "로드맵",
+        "nav-channels": "공식 채널",
+        "hero-subtitle": "SUB 플랫폼 공식 유틸리티 토큰",
+        "hero-description": "자동화된 GPT 도구, 콘텐츠 크리에이터 보상, 분산형 사용자 인센티브를 지원합니다.",
+        "hero-cta": "더 알아보기",
+        "about-title": "SUB 소개",
+        "about-description": "SUB는 GPT, Gemini, Grok 등 여러 챗봇을 하나의 인터페이스로 통합하여 간편한 자동화, 프롬프트 저장, 사용자 참여 기능을 제공하는 맞춤형 AI 원격 제어 도구입니다.",
+        "about-button": "SUB 방문",
+        "token-title": "토큰 정보",
+        "token-details-title": "세부 정보",
+        "token-name": "<strong>이름:</strong> AI Coin",
+        "token-symbol": "<strong>심볼:</strong> AI",
+        "token-supply": "<strong>총 공급량:</strong> 1,000,000,000,000,000",
+        "token-network": "<strong>네트워크:</strong> Polygon Mainnet",
+        "token-contract": "<strong>컨트랙트:</strong> 0xDa77A5aaC5efCB25c8cf71793d71D117E60748D8",
+        "token-allocation-title": "토큰 할당",
+        "token-allocation-airdrop": "<strong>40%:</strong> 사용자 에어드롭",
+        "token-allocation-ecosystem": "<strong>30%:</strong> 생태계 및 보상",
+        "token-allocation-liquidity": "<strong>20%:</strong> 유동성 풀",
+        "token-allocation-team": "<strong>10%:</strong> 팀 및 개발 (12개월 락업)",
+        "token-usecases-title": "사용 사례",
+        "token-usecase-premium": "SUB 프리미엄 기능 해제",
+        "token-usecase-earn": "플랫폼 활동으로 토큰 획득",
+        "token-usecase-referral": "추천 기반 에어드롭 보상",
+        "token-usecase-marketplace": "미래 마켓플레이스 결제",
+        "roadmap-title": "로드맵",
+        "roadmap-2025-04": "Polygon에서 토큰 출시",
+        "roadmap-2025-05": "토큰 정보 등록",
+        "roadmap-2025-06": "에어드롭 이벤트 시작",
+        "roadmap-2025-07": "지갑 통합 및 프리미엄 기능 해제",
+        "roadmap-2025-08": "DEX 유동성 추가",
+        "channels-title": "공식 채널",
+        "channels-twitter": "트위터: @AICoinTeam",
+        "channels-github": "깃허브: ckdnjstjq18",
+        "channels-discord": "디스코드: AI Coin 커뮤니티",
+        "channels-whitepaper": "백서 보기",
+        "footer-website": "웹사이트: <a href='https://ckdnjstjq18.github.io/aicoin-site/' class='text-neon-green hover:underline'>ckdnjstjq18.github.io/aicoin-site</a> (미래: aicoin.site)",
+        "footer-contract": "컨트랙트: 0xDa77A5aaC5efCB25c8cf71793d71D117E60748D8",
+        "footer-email": "이메일: ckdnjstjq18@naver.com",
+        "footer-copyright": "© 2025 AI Coin. 모든 권리 보유.",
+      },
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+      document.title = translations[lang].title;
+    }
+
+    // Default to English
+    setLanguage('en');
+  </script>
+</body>
+</html>
